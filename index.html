@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu - portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1300px)" href="phone.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2% 6%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+            color: rgb(183, 124, 238);
+            font-size: 1.01rem;
+        }
+
+        nav ul li a::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0px;
+
+        }
+
+        .firstsection>div {
+            width: 39%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #9c97f1;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .leftsection .buttons {
+            padding: 30px;
+
+        }
+
+        .leftsection .btn:hover {
+            color: aqua;
+            background-color: yellowgreen;
+        }
+
+        .leftsection .btn:visited {
+            background-color: steelblue;
+        }
+
+
+        .rightsection img {
+            width: 85%;
+        }
+
+        .purple {
+            color: rgb(206, 167, 243);
+        }
+
+        #element {
+            color: rgb(206, 167, 243);
+        }
+
+        #about {
+            padding: 80px 0px;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .about-col-1 {
+            width: 35%;
+        }
+
+        .about-col-1 img {
+            width: 120%;
+            border-radius: 15px;
+        }
+
+        .about-col-2 {
+            width: 60%;
+        }
+
+        .sub-title {
+            font-size: 60px;
+            font-weight: lighter;
+            color: white;
+            margin: 10px 285px;
+
+        }
+
+        p {
+            color: white;
+            margin: 10px 200px;
+        }
+
+        .yellow {
+            color: #9c97f1;
+
+        }
+
+        h1 {
+            margin: 10px 0px;
+        }
+
+        .sub-title1 {
+            font-size: 40px;
+            font-weight: lighter;
+            color: white;
+            margin: 10px 585px;
+        }
+
+        .thirdsection {
+            height: 100%;
+            width: 100%;
+            margin: 150px 0px;
+        }
+
+        .yellow {
+            color: #9c97f1;
+        }
+
+        .social-icons img {
+            margin: 0px 720px;
+            text-decoration: inherit;
+        }
+
+        .social-icons img:hover {
+            color: #ff004f;
+            transform: translateY(-5px);
+        }
+
+        .common-heading {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .netflix {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0px;
+
+        }
+
+        p a:hover {
+            color: #f44336;
+        }
+
+        .hero-img img {
+            width: 400px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+
+        .flexcol {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                width: 100%;
+                height: 10%;
+            }
+
+            .leftsection {
+                font-size: 1.5rem;
+            }
+
+            .leftsection .buttons {
+                width: 150%;
+
+            }
+
+            .sub-title {
+                font-size: 40px;
+                margin: 0px 40px;
+            }
+
+            p {
+                margin: 30px 40px;
+            }
+
+            .sub-title1 {
+                margin: 10px 10px;
+                font-weight: lighter;
+            }
+
+            .social-icons img {
+                margin: 0px 150px;
+            }
+
+            .about-col-1 img {
+                margin-top: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3>Himanshu portfolio</h3>
+            <div class="nav-links">
+                <ul>
+
+                    <li><a href="#">Home</li></a>
+                    <li><a href="#about">About</li></a>
+                    <li><a href="#services">Services</li></a>
+                    <li><a href="#projects">Projects</li></a>
+                    <li><a href="contact.html">Contact Me</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is <span class="purple"> Himanshu</span>
+
+                <div>and i am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1B2R0U0KkudedWtplpLFFOClFAfxF5YBA/view?usp=drive_link"
+                        class="btn">Resume</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/himanshu-chaudhary-2a9166257" class="btn">Visit
+                        linkedin</a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg2.img" alt="">
+            </div>
+        </section>
+        <section class="secondsection">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="bg1.img" alt="">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About <span class="yellow">Me</span></h1>
+                            <p>Hey, There I'm himanshu web < / Developer> and Passionate About Coding and Web Designing.
+                                    Day by Day I'm Enhansing my Skills to make it more better then previous.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="thirdsection">
+            <div id="projects">
+                <h2 class="common-heading">Projects</h2>
+                <p class="netflix"> <a href=https://himanshu-0402.github.io/Netflix-clone/>Netflix Clone</a></p>
+            </div>
+            <div class="hero-img">
+                <img src="hero-img.jpg" alt="My works">
+            </div>
+        </section>
+        <section class="fourthsection">
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contactleft">
+                            <h1 class="sub-title1">Connect <span class="yellow">With Me</span></h1>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/himanshu-chaudhary-2a9166257"><img
+                                        src="linkedin.png" alt=""></a>
+                            </div>
+                        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
